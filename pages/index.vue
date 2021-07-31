@@ -8,5 +8,4 @@ import { Component } from 'nuxt-property-decorator'
 
 @Component
 export default class Index extends Vue {}
-// export default Vue.extend({})
 </script>
