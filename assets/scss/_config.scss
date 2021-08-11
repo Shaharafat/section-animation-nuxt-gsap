@@ -5,15 +5,21 @@
 }
 
 body {
-  transition: all ease 1s;
+  transition: background linear 200ms;
 
   .section-title {
     font-size: 3rem;
     font-weight: 800;
+    transition: color linear 200ms;
   }
 
   .section-subtitle-text {
     margin-top: 2rem;
+    transition: color linear 200ms;
+  }
+
+  .work-container {
+    transition: background linear 200ms;
   }
 
   &.light {
@@ -27,15 +33,12 @@ body {
     }
 
     .work-container {
-      transition: all ease 1s;
-
-      background-color: rgb(255, 241, 163);
+      background: rgb(255, 241, 163);
     }
   }
 
   &.dark {
     background: black;
-
     .section-title {
       color: white;
     }
@@ -44,8 +47,8 @@ body {
       color: white;
     }
 
-    // .work-container {
-    //   background-color: rgb(255, 241, 163);
-    // }
+    .work-container {
+      background: black;
+    }
   }
 }

@@ -1,5 +1,4 @@
 <template>
-  <!-- <Tutorial /> -->
   <div>
     <hero-section />
     <our-work />

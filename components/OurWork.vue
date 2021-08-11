@@ -30,12 +30,10 @@ import gsap from 'gsap'
 @Component
 export default class OurWork extends Vue {
   scrollAnimation() {
-    gsap.to('.work-container', 1, {
+    gsap.to('.work-container', 0, {
       scrollTrigger: {
         trigger: document.querySelector('.work-container'),
         start: 'top 50%',
-        scrub: 2,
-        ease: 'power1.inOut',
         onEnter: () => {
           document.body.classList.remove('light')
           document.body.classList.add('dark')
