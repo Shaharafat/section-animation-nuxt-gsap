@@ -1,0 +1,51 @@
+@mixin allCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  transition: all ease 1s;
+
+  .section-title {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+
+  .section-subtitle-text {
+    margin-top: 2rem;
+  }
+
+  &.light {
+    background: white;
+    .section-title {
+      color: black;
+    }
+
+    .section-subtitle-text {
+      color: black;
+    }
+
+    .work-container {
+      transition: all ease 1s;
+
+      background-color: rgb(255, 241, 163);
+    }
+  }
+
+  &.dark {
+    background: black;
+
+    .section-title {
+      color: white;
+    }
+
+    .section-subtitle-text {
+      color: white;
+    }
+
+    // .work-container {
+    //   background-color: rgb(255, 241, 163);
+    // }
+  }
+}
