@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-section-container allCenter">
+  <b-container tag="section" class="hero-section-container allCenter">
     <div>
       <div class="hero-title">
         <h1 class="section-title hero-title-text">
@@ -20,7 +20,7 @@
         relationships.
       </p>
     </div>
-  </section>
+  </b-container>
 </template>
 
 <script lang="ts">
@@ -30,6 +30,7 @@ import gsap from 'gsap'
 @Component
 export default class HeroSection extends Vue {
   titleAnimation() {
+    // this.$gsap
     const tl = gsap.timeline()
     tl.to('.hero-title-text', 1, {
       y: '0',

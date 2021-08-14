@@ -28,6 +28,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    'nuxt-gsap-module',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -37,7 +38,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
-    'nuxt-gsap-module'
+    // 'nuxt-gsap-module',
   ],
 
   module: {
@@ -51,6 +52,21 @@ export default {
 
   styleResources: {
     scss: ['~assets/scss/main.scss'],
+  },
+  bootstrapVue: {
+    componentPlugins: [
+      'LayoutPlugin',
+      'FormPlugin',
+      'FormCheckboxPlugin',
+      'FormInputPlugin',
+      'FormRadioPlugin',
+      'BVModalPlugin',
+    ],
+    directivePlugins: [
+      'VBPopoverPlugin',
+      'VBTooltipPlugin',
+      'VBScrollspyPlugin',
+    ],
   },
 
   gsap: {
@@ -71,6 +87,37 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: ["gsap"]
+    transpile: ['gsap', 'nuxt-gsap-module'],
   },
+
+  // Add global page transition
+  // pageTransition: {
+  //   name: 'page',
+  //   mode: 'out-in',
+  //   css: false,
+
+  //   beforeEnter(el) {
+  //     this.$gsap.set(el, {
+  //       opacity: 0,
+  //     })
+  //   },
+
+  //   enter(el, done) {
+  //     this.$gsap.to(el, {
+  //       opacity: 1,
+  //       duration: 0.5,
+  //       ease: 'power2.inOut',
+  //       onComplete: done,
+  //     })
+  //   },
+
+  //   leave(el, done) {
+  //     this.$gsap.to(el, {
+  //       opacity: 0,
+  //       duration: 0.5,
+  //       ease: 'power2.inOut',
+  //       onComplete: done,
+  //     })
+  //   },
+  // },
 }
