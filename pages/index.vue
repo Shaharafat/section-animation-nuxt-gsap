@@ -14,7 +14,7 @@ export default class Index extends Vue {
   head() {
     return {
       bodyAttrs: {
-        class: 'light',
+        // class: 'light',
       },
     }
   }

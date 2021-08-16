@@ -5,31 +5,31 @@
 }
 
 body {
-  transition: background linear 200ms;
+  // transition: background linear 200ms;
 
   .section-title {
     font-size: 3rem;
     font-weight: 800;
-    transition: color linear 200ms;
+    // transition: color linear 200ms;
   }
 
   .section-subtitle-text {
     margin-top: 2rem;
-    transition: color linear 200ms;
+    // transition: color linear 200ms;
   }
 
-  .work-container {
-    transition: background linear 200ms;
-  }
+  // .work-container {
+  //   transition: background linear 200ms;
+  // }
 
   &.light {
-    background: white;
+    // background: white;
     .section-title {
-      color: black;
+      // color: black;
     }
 
     .section-subtitle-text {
-      color: black;
+      // color: black;
     }
 
     .work-container {
@@ -38,17 +38,17 @@ body {
   }
 
   &.dark {
-    background: black;
+    // background: black;
     .section-title {
-      color: white;
+      // color: white;
     }
 
     .section-subtitle-text {
-      color: white;
+      // color: white;
     }
 
     .work-container {
-      background: black;
+      // background: black;
     }
   }
 }

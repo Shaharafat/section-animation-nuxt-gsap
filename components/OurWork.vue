@@ -6,7 +6,7 @@
     </div>
 
     <!-- dummy images -->
-    <div class="work-images-container">
+    <!-- <div class="work-images-container">
       <div class="work-images">
         <img
           src="~/static/img-1.jpeg"
@@ -19,7 +19,7 @@
           alt="dummy image"
         />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -30,18 +30,17 @@ import gsap from 'gsap'
 @Component
 export default class OurWork extends Vue {
   scrollAnimation() {
-    gsap.to('.work-container', 0, {
+    gsap.to(['.work-container', '.hero-section-container'], {
+      css: {
+        backgroundColor: 'black',
+        color: 'white',
+      },
       scrollTrigger: {
         trigger: document.querySelector('.work-container'),
         start: 'top 50%',
-        onEnter: () => {
-          document.body.classList.remove('light')
-          document.body.classList.add('dark')
-        },
-        onLeaveBack: () => {
-          document.body.classList.remove('dark')
-          document.body.classList.add('light')
-        },
+        end: 'top 35%',
+        toggleActions: 'play reverse none none',
+        scrub: 1,
       },
     })
   }
@@ -57,23 +56,9 @@ export default class OurWork extends Vue {
     })
   }
 
-  imageAnimation() {
-    gsap.from('.dummy-image', 1.5, {
-      scrollTrigger: {
-        trigger: '.dummy-image',
-        start: 'top bottom',
-        ease: 'expo.out',
-      },
-      y: '100vh',
-      stagger: 0.3,
-      scale: 1.3,
-    })
-  }
-
   mounted() {
     this.scrollAnimation()
     this.titleAnimation()
-    this.imageAnimation()
   }
 }
 </script>
