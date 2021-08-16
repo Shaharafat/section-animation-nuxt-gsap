@@ -65,7 +65,7 @@ export default class OurWork extends Vue {
 
 <style scoped lang="scss">
 .work-container {
-  padding: 0 5rem;
+  padding: 0 2rem;
   height: 100vh;
   display: flex;
   justify-content: space-between;

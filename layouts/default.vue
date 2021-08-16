@@ -24,7 +24,6 @@ export default class extends Vue {
     const setHeight = (): void => {
       height = container.clientHeight
       document.body.style.height = `${height}px`
-      console.log(height)
     }
 
     // set height on init

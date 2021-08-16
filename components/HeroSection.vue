@@ -1,5 +1,5 @@
 <template>
-  <b-container tag="section" class="hero-section-container allCenter">
+  <div class="hero-section-container allCenter">
     <div>
       <div class="hero-title">
         <h1 class="section-title hero-title-text">
@@ -20,7 +20,7 @@
         relationships.
       </p>
     </div>
-  </b-container>
+  </div>
 </template>
 
 <script lang="ts">
@@ -52,7 +52,7 @@ export default class HeroSection extends Vue {
 
 <style scoped lang="scss">
 .hero-section-container {
-  padding: 0 5rem;
+  padding: 0 2rem; 
   height: 100vh;
   display: flex;
   flex-direction: column;
