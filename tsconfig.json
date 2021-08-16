@@ -15,7 +15,13 @@
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
-    "types": ["@nuxt/types", "@nuxtjs/axios", "@types/node", "bootstrap-vue"]
+    "types": [
+      "@nuxt/types",
+      "@nuxtjs/axios",
+      "@types/node",
+      "bootstrap-vue",
+      "gsap"
+    ]
   },
   "exclude": ["node_modules", ".nuxt", "dist"]
 }

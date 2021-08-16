@@ -30,7 +30,6 @@ import gsap from 'gsap'
 @Component
 export default class HeroSection extends Vue {
   titleAnimation() {
-    // this.$gsap
     const tl = gsap.timeline()
     tl.to('.hero-title-text', 1, {
       y: '0',

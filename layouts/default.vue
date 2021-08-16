@@ -21,7 +21,7 @@ export default class extends Vue {
     let height!: number
 
     // This will set the body height
-    const setHeight = () => {
+    const setHeight = (): void => {
       height = container.clientHeight
       document.body.style.height = `${height}px`
       console.log(height)
