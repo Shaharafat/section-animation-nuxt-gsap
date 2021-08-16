@@ -5,50 +5,12 @@
 }
 
 body {
-  // transition: background linear 200ms;
-
   .section-title {
     font-size: 3rem;
     font-weight: 800;
-    // transition: color linear 200ms;
   }
 
   .section-subtitle-text {
     margin-top: 2rem;
-    // transition: color linear 200ms;
-  }
-
-  // .work-container {
-  //   transition: background linear 200ms;
-  // }
-
-  &.light {
-    // background: white;
-    .section-title {
-      // color: black;
-    }
-
-    .section-subtitle-text {
-      // color: black;
-    }
-
-    .work-container {
-      background: rgb(255, 241, 163);
-    }
-  }
-
-  &.dark {
-    // background: black;
-    .section-title {
-      // color: white;
-    }
-
-    .section-subtitle-text {
-      // color: white;
-    }
-
-    .work-container {
-      // background: black;
-    }
   }
 }

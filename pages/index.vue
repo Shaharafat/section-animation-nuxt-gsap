@@ -13,9 +13,9 @@ import { Component } from 'nuxt-property-decorator'
 export default class Index extends Vue {
   head() {
     return {
-      bodyAttrs: {
-        // class: 'light',
-      },
+      // bodyAttrs: {
+      //   // class: 'light',
+      // },
     }
   }
 }
